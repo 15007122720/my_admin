@@ -74,7 +74,7 @@
           <el-input v-model="addform.mobile"></el-input>
         </el-form-item>
       </el-form>
-      <!-- 底部 -->
+      <!-- 底部 区域-->
       <span slot="footer" class="dialog-footer">
         <el-button @click="dialogVisible = false">取 消</el-button>
         <el-button type="primary" @click="dialogVisible = false">确 定</el-button>
@@ -89,7 +89,7 @@ export default {
   data() {
     /* 验证邮箱的规则 */
    var checkEmail =(rule, value, cb)=>{
-   // 验证邮箱的正则表达式
+   // 验证邮箱的正则表达式的
       const regEmail = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/
       if(regEmail.test(value)){
         /* 合法的邮箱 */
